@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="WpfComponent.Component.Visuals.ButtonSender"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:System="clr-namespace:System;assembly=mscorlib"
+    Height="23" Width="75">
+    
+    <Grid>
+        <ToggleButton Name="btn" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked">
+            <!--<Rectangle Name="Rect">
+                <Rectangle.Fill>
+                    <LinearGradientBrush>
+                        <GradientBrush.GradientStops>
+                            <GradientStopCollection>
+                                <GradientStop Color="White" Offset="0.0"/>
+                                <GradientStop Color="Green" Offset="0.5"/>
+                            </GradientStopCollection>
+                        </GradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>-->
+        </ToggleButton>
+    </Grid>
+</UserControl>

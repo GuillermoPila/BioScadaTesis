@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="WpfComponent.ToolBox.ToolBoxControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:c="clr-namespace:WpfComponent.ToolBox"           
+    >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../ToolBox/Tab/Shapes.xaml"/>
+                <ResourceDictionary Source="../ToolBox/ToolBox.xaml"/>
+                <ResourceDictionary Source="../ToolBox/ToolBoxItem.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border BorderBrush="Black" BorderThickness="1">
+            <DockPanel Grid.Row="0">
+                <TextBlock DockPanel.Dock="Left" Text="ToolBox" ></TextBlock>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" HorizontalAlignment="Right">
+                    <Rectangle Width="60" Fill="Transparent"></Rectangle>
+                    <Button FontSize="8" Width="18" Height="18" >&lt;</Button>
+                    <Button FontSize="8" Width="18" Height="18" >?</Button>
+                    <Button FontSize="8" Width="18" Height="18" >X</Button>
+                </StackPanel>
+            </DockPanel>
+        </Border>       
+            <StackPanel Grid.Row="1">
+                <Expander Header="Shapes" Content="{StaticResource Shapes}" IsExpanded="True">
+                </Expander>
+            </StackPanel>
+     
+    </Grid>
+</UserControl>

@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="WpfComponent.Component.Visuals.BIT_Component"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Visuals="clr-namespace:WpfComponent.Component.Visuals"
+    Height="251" Width="507">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="57*" />
+            <ColumnDefinition Width="20*" />
+            <ColumnDefinition Width="17*" />
+            <ColumnDefinition Width="19*" />
+            <ColumnDefinition Width="54*" />
+            <ColumnDefinition Width="19*" />
+            <ColumnDefinition Width="18*" />
+            <ColumnDefinition Width="157*" />
+            <ColumnDefinition Width="20*" />
+            <ColumnDefinition Width="20*" />
+            <ColumnDefinition Width="106*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*" />
+            <RowDefinition Height="23*" />
+            <RowDefinition Height="7*" />
+            <RowDefinition Height="91*" />
+            <RowDefinition Height="71*" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/WpfComponent;component/Images/BIT.png" Stretch="Fill"></ImageBrush>
+        </Grid.Background>
+
+        <Visuals:BiorreactorBottles x:Name="bottles" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="5"></Visuals:BiorreactorBottles>
+        <Visuals:CircularLight x:Name="filling1" Grid.Row="1" Grid.Column="3" Width="15" Height="15" />
+        <Visuals:CircularLight x:Name="draing1" Grid.Row="1" Grid.Column="1" Width="15" Height="15"/>
+    </Grid>
+</UserControl>

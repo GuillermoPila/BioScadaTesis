@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="WpfComponent.Component.Visuals.Switch"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="65" Width="53">
+    <Grid>
+        <Image Name="On" MouseLeftButtonDown="On_MouseLeftButtonDown" Source="/WpfComponent;component/Images/SwitchOn.bmp" Stretch="Fill"></Image>
+        <Image Name="Off" MouseLeftButtonDown="Off_MouseLeftButtonDown" Source="/WpfComponent;component/Images/SwitchOff.bmp" Stretch="Fill"></Image>
+    </Grid>
+</UserControl>

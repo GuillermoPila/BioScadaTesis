@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A584E7D9-5100-44E6-95AC-054E1F4A89CB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BioScadaServer</RootNamespace>
+    <AssemblyName>BioScadaServer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alarms\Alarm.cs" />
+    <Compile Include="Alarms\AlarmHi.cs" />
+    <Compile Include="Alarms\AlarmHiHi.cs" />
+    <Compile Include="Alarms\AlarmLo.cs" />
+    <Compile Include="Alarms\AlarmLoLo.cs" />
+    <Compile Include="Alarms\AlarmROC.cs" />
+    <Compile Include="Alarms\IAlarm.cs" />
+    <Compile Include="BioScada\AlarmManeger.cs" />
+    <Compile Include="BioScada\DBLogger.cs" />
+    <Compile Include="BioScada\Experiment.cs" />
+    <Compile Include="BioScada\INotifierReceiverChange.cs" />
+    <Compile Include="BioScada\Notifier.cs" />
+    <Compile Include="BioScada\SerializeSystem.cs" />
+    <Compile Include="BioScada\Server.cs" />
+    <Compile Include="BioScada\ChangeNotification.cs" />
+    <Compile Include="BioScada\SqlQuery.cs" />
+    <Compile Include="Drivers\BoolDriver\BoolConnector.cs" />
+    <Compile Include="Drivers\BoolDriver\DriverBool.cs" />
+    <Compile Include="Drivers\Driver.cs" />
+    <Compile Include="Drivers\IntDriver\DriverInt.cs" />
+    <Compile Include="Drivers\Modbus\DriverModbusRTU.cs" />
+    <Compile Include="Drivers\Modbus\TypeData.cs" />
+    <Compile Include="ScadaService.cs" />
+    <Compile Include="Drivers\ConnectionManager.cs" />
+    <Compile Include="Drivers\IntDriver\IntConnector.cs" />
+    <Compile Include="Drivers\IConnector.cs" />
+    <Compile Include="Drivers\Modbus\ModbusStationRTU.cs" />
+    <Compile Include="Drivers\Modbus\ModbusTypeData\Coils.cs" />
+    <Compile Include="Drivers\Modbus\ModbusTypeData\Discrete Inputs.cs" />
+    <Compile Include="Drivers\Modbus\ModbusTypeData\Input Registers.cs" />
+    <Compile Include="Drivers\Modbus\ModbusTypeData\ITypeData.cs" />
+    <Compile Include="Drivers\Modbus\ModbusTypeData\Multiple Registers.cs" />
+    <Compile Include="Drivers\Modbus\ModbusTypeData\Single_Coil.cs" />
+    <Compile Include="Drivers\Modbus\ModbusTypeData\Single_Register.cs" />
+    <Compile Include="Drivers\Modbus\ModbusTypeData\TypeData.cs" />
+    <Compile Include="Drivers\SerialComm.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\BinarySerializer.cs" />
+    <Compile Include="Tools\DBTypeConvertor.cs" />
+    <Compile Include="Tools\XmlSerializer.cs" />
+    <Compile Include="Drivers\Modbus\ConnectorModbusRTU.cs" />
+    <Compile Include="Variables\IVariable.cs" />
+    <Compile Include="Variables\Variable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

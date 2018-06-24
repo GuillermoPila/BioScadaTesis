@@ -1,0 +1,30 @@
+﻿<Window x:Class="BioScadaClient.Temp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:WpfComponent.Property;assembly=WpfComponent"
+    xmlns:ss="clr-namespace:WpfComponent.Component;assembly=WpfComponent"
+    xmlns:ssx="clr-namespace:WpfComponent.Component.Visuals;assembly=WpfComponent"
+    Title="Temp" Height="628" Width="898">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WpfComponent;component/Property/PropertyGrid.xaml"></ResourceDictionary>                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+   
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="556*" />
+            <ColumnDefinition Width="320*" />
+        </Grid.ColumnDefinitions>
+        <Button Name="re" Content="{Binding Name}" Click="re_Click" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="111" Margin="80,0,0,210" OverridesDefaultStyle="False"></Button>
+        <ss:ScadaDataSource Name="ddd">
+            <ss:ScadaDataSource.PropertyChange>
+                <ss:ScadaDataPropertyChange />
+            </ss:ScadaDataSource.PropertyChange>
+        </ss:ScadaDataSource>
+        <ssx:CircularLight Name="asaaa"></ssx:CircularLight>
+        <s:PropertyGrid Name="_asss" Grid.Column="1"></s:PropertyGrid>
+    </Grid>
+</Window>

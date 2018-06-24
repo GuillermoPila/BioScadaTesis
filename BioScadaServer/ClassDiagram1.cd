@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BioScadaServer.BioScada.Alarm" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAggAAAIAAAACAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>BioScada\Alarm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.BioScada.AlarmManeger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACBAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>BioScada\AlarmManeger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BioScadaServer.BioScada.ChangeNotification">
+    <Position X="14.5" Y="0.5" Width="1.75" />
+    <NestedTypes>
+      <Class Name="BioScadaServer.BioScada.ChangeNotification.ItemVar" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BioScada\ChangeNotification.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgAAQAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BioScada\ChangeNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.BioScada.DBLogger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAgAAAAAAQAIACAQiAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BioScada\DBLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BioScadaServer.BioScada.Experiment">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAQAAAAEAAAAgAQAAAAAAAA=</HashCode>
+      <FileName>BioScada\Experiment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.BioScada.Notifier">
+    <Position X="12.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAEACAAAAAABABAAAAABQQAAAAAJAAEQAAAAAA=</HashCode>
+      <FileName>BioScada\Notifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.BioScada.ParChangeNotification_Receiver" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>BioScada\Notifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.BioScada.Server" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBQAAEQAACAAACIAAAEgAAAABAQAQACAoMAAAAAAAAA=</HashCode>
+      <FileName>BioScada\Server.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BioScadaServer.Drivers.BoolConnector.BoolConnector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAEAAAABAAAAAAgAAAAAAAAgAAAAIEAAAA=</HashCode>
+      <FileName>Drivers\BoolConnector\BoolConnector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BioScadaServer.Drivers.ConnectionManager" Collapsed="true">
+    <Position X="5.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAIAARCCQAAAAEQABAAEIAAAAAAIAAAAAgA=</HashCode>
+      <FileName>Drivers\ConnectionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Drivers.SerialComm">
+    <Position X="9.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAAAAAEAAAYBAAEAAAAAgAAAQQAEAAAAAEgAGUAAA=</HashCode>
+      <FileName>Drivers\SerialComm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Drivers.IntDriver.IntConnector" BaseTypeListCollapsed="true">
+    <Position X="4" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAEAAAABAAAAAAgAAAAAAAAgAAAAIEAAAA=</HashCode>
+      <FileName>Drivers\IntDriver\IntConnector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BioScadaServer.Drivers.Modbus.ConnectorModbusRTU" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAIAAAACAUAAAAFAACAAIgAAAGAAAAgAAAAIECAAg=</HashCode>
+      <FileName>Drivers\Modbus\ConnectorModbusRTU.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BioScadaServer.Drivers.Modbus.ModbusStationRTU" Collapsed="true">
+    <Position X="9.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAgAAAAQAAAAEICAAAAAgAAAAAAAgAAgA=</HashCode>
+      <FileName>Drivers\Modbus\ModbusStationRTU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Drivers.Modbus.ModbusTypeData.Coils" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drivers\Modbus\ModbusTypeData\Coils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Drivers.Modbus.ModbusTypeData.Discrete_Inputs" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drivers\Modbus\ModbusTypeData\Discrete Inputs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Drivers.Modbus.ModbusTypeData.Input_Registers" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAIAAEAAAAAAAAAAIAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drivers\Modbus\ModbusTypeData\Input Registers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Drivers.Modbus.ModbusTypeData.Multiple_Registers" Collapsed="true">
+    <Position X="1.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAIAAEAAAAAAAAAAIAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drivers\Modbus\ModbusTypeData\Multiple Registers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Drivers.Modbus.ModbusTypeData.Single_Coil" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAIEAEAABAAAAAAAIAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drivers\Modbus\ModbusTypeData\Single_Coil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Drivers.Modbus.ModbusTypeData.Single_Register" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drivers\Modbus\ModbusTypeData\Single_Register.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Drivers.Modbus.ModbusTypeData.TypeData" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAIACEAAAAAAAAAAIAAAAAAwoAAAACAAAAAAAAAAg=</HashCode>
+      <FileName>Drivers\Modbus\ModbusTypeData\TypeData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BioScadaServer.Program" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAEBAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.ServerService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAIAAAEAAAAAAAQAAAAAAAASAAAAAAI=</HashCode>
+      <FileName>ScadaService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BioScadaServer.Tools.BinarySerializer" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Tools\BinarySerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Tools.DBTypeConvertor" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAgAAAAAAAAAAAEIAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Tools\DBTypeConvertor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Tools.XmlSerializer" Collapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAACBAAAAAAAAAAAAAAIE=</HashCode>
+      <FileName>Tools\XmlSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BioScadaServer.Variables.Variable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIDAAAQAAABEAAAQQAAAUACAQEAAgEAAAAAA=</HashCode>
+      <FileName>Variables\Variable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="BioScadaServer.BioScada.INotifierReceiverChange">
+    <Position X="9.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BioScada\INotifierReceiverChange.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BioScadaServer.Drivers.IConnector">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAgAAAAAAAAgAAAAAEAAAA=</HashCode>
+      <FileName>Drivers\IConnector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BioScadaServer.Drivers.Modbus.ModbusTypeData.ITypeData" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAIAAEAAAAAAAAAAIAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drivers\Modbus\ModbusTypeData\ITypeData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BioScadaServer.IServer">
+    <Position X="11" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAIAAAEAAAAAAAQAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ScadaService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BioScadaServer.Variables.IVariable" Collapsed="true">
+    <Position X="12.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Variables\IVariable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BioScadaServer.Drivers.Modbus.TypeData" Collapsed="true">
+    <Position X="1.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAgAABACAAAAAAAhAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drivers\Modbus\TypeData.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

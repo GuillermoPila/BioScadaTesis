@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="WpfComponent.Component.Visuals.MasterK120S"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:my="clr-namespace:WpfComponent.Component.Visuals" Height="271" Width="482">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="138*" />
+            <RowDefinition Height="162*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Name="stackPanel1">
+            <TextBlock HorizontalAlignment="Left" Padding="12,1" Height="21" Name="textBlock1" Width="120" Text="IN" />
+            <StackPanel Grid.Row="0" Name="stackPanelIN" Orientation="Horizontal">
+              <my:CircularLight Height="40" LightOn="False" x:Name="In0" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In1" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In2" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In3" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In4" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In5" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In6" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In7" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In8" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In9" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="In10" Width="40"/>    
+              <my:CircularLight Height="40" LightOn="False" x:Name="In11" Width="40"/>    
+            </StackPanel>  
+            <StackPanel Grid.Row="0" Name="stackPanelINText" Orientation="Horizontal">
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="00"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="01"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="02"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="03"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="04"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="05"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="06"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="07"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="08"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="09"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="0A"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="0B"/>                
+            </StackPanel> 
+            <StackPanel Grid.Row="0" Name="stackPanelInButton" Orientation="Horizontal">
+              <my:Switch Height="40" x:Name="BtnIn0" VariableName="P00" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn1" VariableName="P01" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn2" VariableName="P02" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn3" VariableName="P03" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn4" VariableName="P04" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn5" VariableName="P05" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn6" VariableName="P06" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn7" VariableName="P07" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn8" VariableName="P08" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn9" VariableName="P09" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn10" VariableName="P10" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnIn11" VariableName="P11" Width="40"/>
+            </StackPanel> 
+        </StackPanel>
+        <StackPanel Grid.Row="1" Name="stackPanel2">
+            <TextBlock HorizontalAlignment="Left" Padding="12,1" Height="21" Name="textBlock2" Width="120" Text="OUT" />
+            <StackPanel Grid.Row="0" Name="stackPanelOut" Orientation="Horizontal">
+              <my:CircularLight Height="40" LightOn="False" x:Name="Out40" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="Out41" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="Out42" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="Out43" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="Out44" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="Out45" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="Out46" Width="40"/>
+              <my:CircularLight Height="40" LightOn="False" x:Name="Out47" Width="40"/>              
+            </StackPanel> 
+            <StackPanel Grid.Row="0" Name="stackPanelOutText" Orientation="Horizontal">
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="40"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="41"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="42"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="43"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="44"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="45"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="46"/>
+              <TextBlock Height="20" Width="40" Padding="17,1" Text="47"/>              
+            </StackPanel> 
+            <StackPanel Grid.Row="0" Name="stackPanelOutButton" Orientation="Horizontal">
+              <my:Switch Height="40" x:Name="BtnOut40" VariableName="P40" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnOut41" VariableName="P41" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnOut42" VariableName="P42" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnOut43" VariableName="P43" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnOut44" VariableName="P44" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnOut45" VariableName="P45" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnOut46" VariableName="P46" Width="40"/>
+              <my:Switch Height="40" x:Name="BtnOut47" VariableName="P47" Width="40"/>                        
+            </StackPanel> 
+        </StackPanel>
+    </Grid>
+</UserControl>
